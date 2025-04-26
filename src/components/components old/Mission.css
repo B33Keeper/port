@@ -1,0 +1,89 @@
+.mission-section {
+  padding: 4rem 2rem;
+  color: white;
+  background: transparent;
+}
+
+.mission-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+ 
+}
+
+/* Mission block: Header on left, text on right */
+.mission-block {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+  
+}
+
+/* Vision block: Text on left, header on right */
+.vision-block {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.header-container {
+  width: 320px;
+  margin-right: 25px;
+}
+
+.content-container {
+  padding-top: 1rem;
+}
+
+.content-container p {
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  max-width: 800px;
+}
+
+/* Vision block specific text alignment */
+.vision-block .content-container p {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.letter {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+  opacity: 0.9;
+  padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .mission-block, .vision-block {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+  
+  /* Restore order on mobile */
+  .vision-block .content-container {
+    order: 2;
+  }
+  
+  .vision-block .header-container {
+    order: 1;
+  }
+
+  .letter {
+    font-size: 6rem;
+  }
+} 

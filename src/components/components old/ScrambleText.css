@@ -1,0 +1,30 @@
+.scramble-text {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Space Mono', monospace;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: relative;
+  margin-bottom: 380px;
+}
+
+.scramble-text:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.scramble-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: width 0.3s ease;
+}
+
+.scramble-text:hover::before {
+  width: 100%;
+} 

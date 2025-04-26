@@ -1,0 +1,207 @@
+.team-members-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+}
+
+.team-members-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+
+}
+
+.carousel-container {
+    margin-top: 170px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-content {
+  position: relative;
+  width: 100%;
+}
+
+.member-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.member-card.transitioning {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.member-info {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.member-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.member-info h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.member-info h3 {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.skills-list li {
+  color: white;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.skills-list li::before {
+  content: "•";
+  margin-right: 0.5rem;
+  color: white;
+}
+
+.member-image {
+  flex: 0 0 400px;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-links span {
+  color: white;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.carousel-button.prev {
+  left: 20px;
+}
+
+.carousel-button.next {
+  right: 20px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+  .member-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .member-info {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .member-image {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .skills-list li {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+} 

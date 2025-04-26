@@ -1,0 +1,35 @@
+.typewriter {
+  display: inline-block;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  color: white;
+  min-width: 320px; /* Width of the longest word (MISSION) */
+  text-align: left;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 80%;
+  background-color: white;
+  margin-left: 5px;
+  animation: blink 1s step-end infinite;
+  position: absolute;
+  top: 10%;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing .cursor {
+  opacity: 1;
+} 

@@ -1,0 +1,112 @@
+/* Global styles */
+.home {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8B0000, #4B0082);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo-section {
+  margin: 2rem 0;
+}
+
+.main-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.company-name {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.tagline {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: normal;
+}
+
+.description {
+  max-width: 800px;
+  margin: 2rem auto;
+  line-height: 1.6;
+}
+
+/* Team Gallery */
+.team-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 180px;
+  height: 240px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Mission and Vision */
+.mission-vision {
+  max-width: 800px;
+  margin: 3rem auto;
+  text-align: left;
+}
+
+.mission, .vision {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.mission h3, .vision h3 {
+  font-size: 3rem;
+  margin: 0;
+  opacity: 0.3;
+}
+
+.mission p, .vision p {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+} 
