@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PORT/static/css/main.5845a8af.css",
-    "main.js": "/PORT/static/js/main.30bd47fc.js",
-    "static/js/453.04ec5b8f.chunk.js": "/PORT/static/js/453.04ec5b8f.chunk.js",
-    "index.html": "/PORT/index.html",
-    "static/media/byteforge-logo.svg": "/PORT/static/media/byteforge-logo.2daea5e57daa44aad5d3c7a1578511d3.svg",
-    "main.5845a8af.css.map": "/PORT/static/css/main.5845a8af.css.map",
-    "main.30bd47fc.js.map": "/PORT/static/js/main.30bd47fc.js.map",
-    "453.04ec5b8f.chunk.js.map": "/PORT/static/js/453.04ec5b8f.chunk.js.map"
+    "main.css": "/port/static/css/main.5845a8af.css",
+    "main.js": "/port/static/js/main.f43ce5de.js",
+    "static/js/453.04ec5b8f.chunk.js": "/port/static/js/453.04ec5b8f.chunk.js",
+    "static/media/byteforge-logo.svg": "/port/static/media/byteforge-logo.2daea5e57daa44aad5d3c7a1578511d3.svg",
+    "index.html": "/port/index.html",
+    "main.5845a8af.css.map": "/port/static/css/main.5845a8af.css.map",
+    "main.f43ce5de.js.map": "/port/static/js/main.f43ce5de.js.map",
+    "453.04ec5b8f.chunk.js.map": "/port/static/js/453.04ec5b8f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5845a8af.css",
-    "static/js/main.30bd47fc.js"
+    "static/js/main.f43ce5de.js"
   ]
 }
